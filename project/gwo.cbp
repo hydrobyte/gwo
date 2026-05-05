@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gwo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="build/debug/gwo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/debug/obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="build/release/gwo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/release/obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../include" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libstdc++" />
+			<Add option="-static-libgcc" />
+			<Add option="-static" />
+		</Linker>
+		<Unit filename="../benchmark/f1.cc" />
+		<Unit filename="../benchmark/f2.cc" />
+		<Unit filename="../benchmark/f3.cc" />
+		<Unit filename="../benchmark/f4.cc" />
+		<Unit filename="../benchmark/f5.cc" />
+		<Unit filename="../benchmark/f6.cc" />
+		<Unit filename="../benchmark/f7.cc" />
+		<Unit filename="../include/GWOException.hpp" />
+		<Unit filename="../include/argument.hpp" />
+		<Unit filename="../include/benchmark.hpp" />
+		<Unit filename="../include/benchmarkFactory.hpp" />
+		<Unit filename="../include/benchmark/f1.hpp" />
+		<Unit filename="../include/benchmark/f2.hpp" />
+		<Unit filename="../include/benchmark/f3.hpp" />
+		<Unit filename="../include/benchmark/f4.hpp" />
+		<Unit filename="../include/benchmark/f5.hpp" />
+		<Unit filename="../include/benchmark/f6.hpp" />
+		<Unit filename="../include/benchmark/f7.hpp" />
+		<Unit filename="../include/gwo.hpp" />
+		<Unit filename="../include/utils.hpp" />
+		<Unit filename="../src/GWOException.cc" />
+		<Unit filename="../src/argument.cc" />
+		<Unit filename="../src/benchmark.cc" />
+		<Unit filename="../src/benchmarkFactory.cc" />
+		<Unit filename="../src/gwo.cc" />
+		<Unit filename="../src/main.cc" />
+		<Unit filename="../src/utils.cc" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
